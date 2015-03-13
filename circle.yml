@@ -5,8 +5,4 @@ machine:
 test:
   override:
     - docker build -t registry.hub.docker.com/alourie/baseci . 
-
-deployment:
-  registry_push:
-    commands:
-      - docker push registry.hub.docker.com/alourie/baseci -u alourie -e djay.il@gmail.com -p $DOCKER_AUTH
+    - docker push registry.hub.docker.com/alourie/baseci -u alourie -e djay.il@gmail.com -p $DOCKER_AUTH
