@@ -5,4 +5,5 @@ machine:
 test:
   override:
     - docker build -t registry.hub.docker.com/alourie/baseci . 
-    - docker push registry.hub.docker.com/alourie/baseci -u alourie -e djay.il@gmail.com -p $DOCKER_AUTH
+    - echo $DOCKER_AUTH > ~/.dockercfg
+    - docker push registry.hub.docker.com/alourie/baseci
