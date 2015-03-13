@@ -4,5 +4,5 @@ machine:
 
 test:
   override:
-    - docker build -name registry.hub.docker.com/alourie/baseci . 
+    - docker build -t registry.hub.docker.com/alourie/baseci . 
     - docker images
