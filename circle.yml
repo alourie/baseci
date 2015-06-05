@@ -4,6 +4,6 @@ machine:
 
 test:
   override:
-    - docker build -t registry.hub.docker.com/alourie/baseci . 
+    - docker build -t registry.hub.docker.com/alourie/debian-jessie . 
     - echo $DOCKER_AUTH > ~/.dockercfg
-    - docker push registry.hub.docker.com/alourie/baseci
+    - docker push registry.hub.docker.com/alourie/debian-jessie
